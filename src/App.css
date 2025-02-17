@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "League Spartan";
+}
+
+.header {
+  position: relative;
+  background-color: hsl(180, 29%, 50%);
+  height: 100px;
+  width: 100vw;
+}
+.header-shapes {
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+}
+
+.app-background {
+  background-color: hsl(180, 31%, 95%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.job-container {
+  width: 1200px;
+  min-width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(180, 52%, 96%);
+  margin: 20px;
+  gap: 20px;
+  box-shadow: 0px 10px 10px hsl(180, 38%, 82%);
+  padding: 20px;
+  border-left: 3px solid hsl(180, 29%, 50%);
+  border-radius: 4px;
+}
+.logo-and-details {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.job-position-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+.company-name {
+  color: hsl(180, 29%, 50%);
+  font-weight: 600;
+}
+
+.job-position {
+  font-size: 18px;
+  font-weight: 800;
+  color: rgb(44, 44, 44);
+}
+
+.job-position:hover {
+  color: hsl(180, 29%, 50%);
+  cursor: pointer;
+}
+
+.new {
+  display: flex;
+  font-size: 10px;
+  background-color: hsl(180, 29%, 50%);
+  padding: 5px;
+  border-radius: 15px;
+  color: white;
+  align-items: center;
+}
+
+.featured {
+  display: flex;
+  font-size: 10px;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  align-items: center;
+}
+
+.company-new-featured-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.bottom-details {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  color: grey;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.tag {
+  color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 48%, 89%);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.tag:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+
+.search-bar {
+  position: relative;
+  width: 1200px;
+  min-width: 600px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(180, 52%, 96%);
+  margin: 20px;
+  gap: 20px;
+  box-shadow: 0px 10px 10px hsl(180, 38%, 82%);
+  padding: 20px;
+
+  border-radius: 4px;
+}
+
+.tagName {
+  color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 48%, 89%);
+  padding: 10px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.clear-button {
+  color: hsl(180, 29%, 50%);
+  font-weight: 900;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+
+  border-style: none;
+  background-color: hsl(180, 52%, 96%);
+}
+.clear-button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.searchBar-tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.delete-tag {
+  background-color: hsl(180, 29%, 50%);
+  border-style: none;
+  width: 30px;
+  color: white;
+  font-size: 15px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.delete-tag:hover {
+  background-color: rgb(44, 44, 44);
+}
