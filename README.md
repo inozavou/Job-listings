@@ -4,10 +4,10 @@ A React-based application that displays job listings and allows users to filter 
 
 # Features
 
--Job Listings Display – Shows companies with their details and tags.
--Tag-Based Filtering – Click on role, level, language, or tool tags to filter job postings.
--Dynamic Search Bar – Displays selected filters with the ability to remove individual tags or clear all.
--Responsive UI – Built with CSS for clean and accessible design.
+- Job Listings Display – Shows companies with their details and tags.
+- Tag-Based Filtering – Click on role, level, language, or tool tags to filter job postings.
+- Dynamic Search Bar – Displays selected filters with the ability to remove individual tags or clear all.
+- Responsive UI – Built with CSS for clean and accessible design.
 
 # How It Works
 
@@ -34,13 +34,13 @@ cd job-listing-filter-app
 
 # Usage
 
--Click any tag in the job listing to filter jobs.
--View applied filters in the search bar.
--Remove individual filters using the ❌ button.
--Click Clear to remove all filters and show all jobs again.
+- Click any tag in the job listing to filter jobs.
+- View applied filters in the search bar.
+- Remove individual filters using the ❌ button.
+- Click Clear to remove all filters and show all jobs again.
 
 # Tech Stack
 
--React – UI and state management
--CSS – Styling
--JSON – Static data source
+- React – UI and state management
+- CSS – Styling
+- JSON – Static data source
