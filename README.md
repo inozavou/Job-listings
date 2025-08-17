@@ -16,14 +16,13 @@ A React-based application that displays job listings and allows users to filter 
 - The list of jobs updates in real-time to match all selected filters.
 
 # Project Structure
-``` bash
+
 src/
 ├── App.js # Main component and app logic
 ├── App.css # Styling for the app
 ├── data.json # Job listing data
 ├── images/ # Header and company logos
-```
-# Installation
+Installation
 Clone the repository:
 
 ```bash
