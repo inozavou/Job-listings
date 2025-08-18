@@ -154,18 +154,21 @@ function SearchBar({
   return (
     searchBarVisible && (
       <div className="search-bar">
-        {tagName?.length > 0 &&
-          tagName.map((element, index) => (
-            <div className="searchBar-tags" key={index}>
-              <div className="tagName">{element}</div>
-              <button
-                className="delete-tag"
-                onClick={() => handleDeleteTag(element)}
-              >
-                &#x2716;
-              </button>
-            </div>
-          ))}
+        <div className="tags-container">
+          {tagName?.length > 0 &&
+            tagName.map((element, index) => (
+              <div className="searchBar-tags" key={index}>
+                <div className="tagName">{element}</div>
+                <button
+                  className="delete-tag"
+                  onClick={() => handleDeleteTag(element)}
+                >
+                  &#x2716;
+                </button>
+              </div>
+            ))}
+        </div>
+
         <button
           className="clear-button"
           onClick={() => {

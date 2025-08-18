@@ -1,30 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "League Spartan";
 }
 
+html {
+  font-size: 1rem;
+}
+
 .header {
   position: relative;
   background-color: hsl(180, 29%, 50%);
-  height: 100px;
+  height: 10rem;
   width: 100vw;
 }
 .header-shapes {
   position: absolute;
   width: 100vw;
-  height: 100px;
+  height: 10rem;
 }
 
 .app-background {
   background-color: hsl(180, 31%, 95%);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .main-content {
@@ -34,30 +39,31 @@ body {
 }
 
 .jobs-container {
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 2rem;
 }
 
 .job-container {
-  width: 1200px;
-  min-width: 600px;
+  width: 100%;
+  min-width: 60rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: hsl(180, 52%, 96%);
-  margin: 20px;
-  gap: 20px;
-  box-shadow: 0px 10px 10px hsl(180, 38%, 82%);
-  padding: 20px;
-  border-left: 3px solid hsl(180, 29%, 50%);
-  border-radius: 4px;
+  margin: 1rem;
+  gap: 1rem;
+  box-shadow: 0rem 1rem 1rem hsl(180, 38%, 82%);
+  padding: 1rem;
+  border-left: 0.3rem solid hsl(180, 29%, 50%);
+  border-radius: 0.4rem;
 }
 .logo-and-details {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .job-position-details {
@@ -65,7 +71,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .company-name {
@@ -73,8 +79,18 @@ body {
   font-weight: 600;
 }
 
+.company-logo {
+  display: flex;
+  align-items: center;
+}
+
+.company-logo-image {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
 .job-position {
-  font-size: 18px;
+  font-size: 1.4rem;
   font-weight: 800;
   color: rgb(44, 44, 44);
 }
@@ -86,50 +102,51 @@ body {
 
 .new {
   display: flex;
-  font-size: 10px;
+  font-size: 0.6rem;
   background-color: hsl(180, 29%, 50%);
-  padding: 5px;
-  border-radius: 15px;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
   color: white;
   align-items: center;
 }
 
 .featured {
   display: flex;
-  font-size: 10px;
+  font-size: 0.6rem;
   background-color: rgb(44, 44, 44);
   color: white;
-  border-radius: 15px;
-  padding: 5px;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
   align-items: center;
 }
 
 .company-new-featured-container {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 0.8rem;
 }
 
 .bottom-details {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 1rem;
   color: grey;
+  padding-left: 1rem;
 }
 
 .tags {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 30px;
+  gap: 0.8rem;
 }
 
 .tag {
   color: hsl(180, 29%, 50%);
   background-color: hsl(180, 48%, 89%);
-  padding: 10px;
+  padding: 0.5rem;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 .tag:hover {
   background-color: hsl(180, 29%, 50%);
@@ -137,34 +154,38 @@ body {
 }
 
 .search-bar {
-  position: relative;
-  width: 1200px;
-  min-width: 600px;
-  height: 30px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  min-width: 60rem;
+  height: 3rem;
   background-color: hsl(180, 52%, 96%);
-  margin: 20px;
-  gap: 20px;
-  box-shadow: 0px 10px 10px hsl(180, 38%, 82%);
-  padding: 20px;
+  margin: 2rem;
+  box-shadow: 0rem 1rem 1rem hsl(180, 38%, 82%);
+  padding: 2rem;
+  border-radius: 0.4rem;
+  align-items: center;
+}
 
-  border-radius: 4px;
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 .tagName {
   color: hsl(180, 29%, 50%);
   background-color: hsl(180, 48%, 89%);
-  padding: 10px;
-  border-radius: 5px 0px 0px 5px;
+  padding: 0.5rem;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
 }
 
 .clear-button {
   color: hsl(180, 29%, 50%);
   font-weight: 900;
-  position: absolute;
-  right: 20px;
-  top: 25px;
 
   border-style: none;
   background-color: hsl(180, 52%, 96%);
@@ -182,10 +203,10 @@ body {
 .delete-tag {
   background-color: hsl(180, 29%, 50%);
   border-style: none;
-  width: 30px;
+  width: 2rem;
   color: white;
-  font-size: 15px;
-  border-radius: 0px 5px 5px 0px;
+  font-size: 1rem;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
 }
 
 .delete-tag:hover {
